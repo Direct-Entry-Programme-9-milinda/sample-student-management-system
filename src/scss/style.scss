@@ -6,7 +6,8 @@ table {
         display: none;
     }
     tbody tr.selected{
-        background-color: lightcoral;
+        background-color: rgb(233, 187, 187);
+        border-radius: 5px;
     }
     td:first-child,
     th:first-child,
@@ -25,6 +26,7 @@ table {
             color: red;
         }
     }
+
     tbody tr{
         cursor: pointer;
     }
@@ -41,4 +43,18 @@ table {
 
 .col-remove{
     width: 70px;
+}
+
+@media all and (min-width: 1200px){
+    #wrapper{
+        border-left: 1px solid lightgray;
+        max-height: calc(100vh - 8rem);
+        overflow: hidden auto;
+    }
+
+    table thead{
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
 }
