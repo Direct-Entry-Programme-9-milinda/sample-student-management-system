@@ -1,0 +1,44 @@
+table {
+    &.empty tfoot{
+        display: table-footer-group;
+    }
+    tfoot{
+        display: none;
+    }
+    tbody tr.selected{
+        background-color: lightcoral;
+    }
+    td:first-child,
+    th:first-child,
+    td:last-child {
+        text-align: center;
+    }
+    
+    td, th{
+        vertical-align: middle;
+    }
+
+    td:last-child {
+        font-size: 2px;
+        
+        i:hover{
+            color: red;
+        }
+    }
+    tbody tr{
+        cursor: pointer;
+    }
+}
+
+.col-id {
+    text-align: center !important;
+    width: 150px;
+}
+
+.col-contact{
+    width: 150px;
+}
+
+.col-remove{
+    width: 70px;
+}
